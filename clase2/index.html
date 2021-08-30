@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASE 2</title>
+
+    <!--Estamos seleccionando las etiquetas "table" y "td".
+    Se les dará un diseño independiente para que no se fusione el diseño.-->
+    <style>
+        table, td, tr, th{
+            border: 1px solid dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Segunda Clase</h1>
+    <hr width="50%">
+
+    <!--Hay dos tipos de listas, las ordenadas y las desordenadas-->
+    <h2>Listas</h2>
+    <h3>Listas Ordenadas</h3>
+    <ol>
+        <li>Hot-Dog</li>
+        <li>Hamburguesa</li>
+        <li>Rias Gremory</li>
+        <li>Tacos de Pastor</li>
+    </ol>
+
+    <h3>Lista Desordenada</h3>
+    <ul>
+        <li>Hamsters</li>
+        <li>Cuyos</li>
+        <li>Ratones</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+
+    <!--Es la mezcla de los dos tipos de lista-->
+    <h3>Listas Anidadas</h3>
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum.</li>
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet.
+            </li>
+            <ol>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ol>
+        </ul>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ol>
+
+    <!--Las tablas tienen filas y columnas-->
+    <h3>Tablas</h3>
+
+    <table>
+
+        <!--Esta etiqueta crea la fila, aquí se crean las celdas-->
+        <tr>
+            <td rowspan="2">Item 1</td> <!--"rowspan" extenderá hacia abajo las celdas que va a ocupar el item-->
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+
+        <tr>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td colspan="2">Item 4</td> <!--"colspan" extenderá el item para que cubra los espacios faltantes dentro de la tabla-->
+        </tr>
+
+    </table>
+
+    <h3>Tablas Header, Footer, Body</h3>
+
+    <table>
+        <tr>
+            <th>Gatos</th>
+            <td>Gatos</td>
+            <td>Gatos</td>
+            <td>Gatos</td>
+            <td>Gatos</td>
+        </tr>
+
+        <!--Cuerpo de la Tabla-->
+        <tbody>
+            <th>Gatos</th>
+            <td>Perros</td>
+            <td>Hurón</td>
+            <td>Tiburón</td>
+            <td>León</td>
+        </tbody>
+
+        <!--Cabecera de la Tabla-->
+        <thead>
+            <th>Gatos</th>
+            <th>Perros</th>
+            <th>Hurón</th>
+            <th>Tiburón</th>
+            <th>Leónsito</th>
+        </thead>
+
+        <!--Es el pie de la tabla-->
+        <tfoot>
+            <tr>
+                <th>Tiburón</th>
+                <td>Tiburón</td>
+                <td>Tiburón</td>
+                <td>Tiburón</td>
+                <td>Tiburón</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h3>Ejercicio Tabla</h3>
+
+    <table width="25%">
+
+        <tr>
+            <td colspan="6">Item A</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" rowspan="3">Item B</td>
+            <td colspan="3">Item C</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Item D</td>
+            <td colspan="2">Item E</td>
+        </tr>
+
+        <tr>
+            <td>Item 1</td>
+
+
+        </tr>
+
+        <tr>
+            <td>Item 1</td>
+            <td>Item 1</td>
+            <td colspan="2">Item 1</td>
+            <td>Item 1</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Item 11</td>
+            <td colspan="3">Item 1</td>
+            <td colspan="2" rowspan="2">Item 10</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Item z</td>
+        </tr>
+    </table>
+
+    <h3>Botones y Enlaces</h3>
+
+    <a href="">Quieres conocer a Martha</a>
+    <button>Click Aquí para contactarla</button>
+</body>
+
+</html>
